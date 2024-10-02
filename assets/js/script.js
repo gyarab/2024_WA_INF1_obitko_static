@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function () {
     const cards = document.querySelectorAll(".offers__card");
+    const headerHamburgerButton = document.querySelector(".header__hamburger-button")
+    const mobileNav = document.querySelector(".mobile-menu__wrapper")
 
     const observerOptions = {
         threshold: 0.2 
@@ -17,6 +19,11 @@ document.addEventListener("DOMContentLoaded", function () {
     cards.forEach(card => {
         observer.observe(card); 
     });
+
+    headerHamburgerButton.addEventListener("click", () => {
+        mobileNav.classList.toggle("mobile-menu-active")
+        headerHamburgerButton.classList.toggle("hamburger-button-active")
+    }); 
 });
 
 
