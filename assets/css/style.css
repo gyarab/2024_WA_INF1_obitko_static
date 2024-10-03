@@ -184,6 +184,12 @@ input {
     border: none;
     z-index: 999;
     cursor: pointer;
+    position: relative;
+}
+
+.header__hamburger-button.hamburger-button-active {
+    position: fixed;
+    right: 2rem;
 }
 
 .header__hamburger-button span {
@@ -443,11 +449,6 @@ input {
 
     .mobile-menu__wrapper.mobile-menu-active .header__button {
         display: block;
-    }
-
-    .header__hamburger-button.mobile-menu-active {
-        position: fixed;
-        right: 2rem;
     }
 }
 
