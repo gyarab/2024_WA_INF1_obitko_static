@@ -219,6 +219,9 @@ input {
     transform: rotate(-45deg); 
 }
 
+
+/* Mobile menu */
+
 .mobile-menu__wrapper {
     width: 100%;
     display: flex;
@@ -226,6 +229,11 @@ input {
     align-items: center;
     gap: 2rem;
 }
+
+.mobile-logo {
+    display: none;
+}
+
 
 /* Hero section */
 
@@ -389,12 +397,6 @@ input {
 
 /* Responsiveness */
 
-@media (min-width: 768px) {
-
-    .mobile-logo {
-        display: none;
-    }
-}
 
 @media (max-width: 992px) {
 
@@ -448,6 +450,10 @@ input {
     }
 
     .mobile-menu__wrapper.mobile-menu-active .header__button {
+        display: block;
+    }
+
+    .mobile-logo {
         display: block;
     }
 }
