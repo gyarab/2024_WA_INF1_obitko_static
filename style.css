@@ -94,7 +94,7 @@ input {
 }
 
 .bg {
-    background-image: url("../images/hero-bg.webp");
+    background-image: url("assets/images/hero-bg.webp");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -449,6 +449,10 @@ input {
         transform: translateX(0);
     }
 
+    body:has(.mobile-menu__wrapper.mobile-menu-active) {
+        overflow: hidden;
+    }
+
     .mobile-menu__wrapper.mobile-menu-active .header__button {
         display: block;
     }
@@ -457,4 +461,3 @@ input {
         display: block;
     }
 }
-
