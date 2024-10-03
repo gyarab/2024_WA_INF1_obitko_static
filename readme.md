@@ -3,6 +3,9 @@
 Repozitář pro odevzdávání domácích úkolů. 
 
 ## Aktuální projekt: Extratech 3D 
+
+Jednoduchý, plně responzivní web. Dá se použít jako šablona, nebo jako základ pro další projekty. 
+
 ![Screenshot](screen.png)
 
 ## Použité technologie
